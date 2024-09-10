@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#search-container {
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 5px 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background: #0056b3;
+}
+
+#map {
+    height: 85vh;
+    width: 80vw;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative; /* Ensure the map container is positioned correctly */
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../src/Rani_ki_vav_02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#directions {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-family: ui-monospace;
+    margin-left: 7px;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: larger;
+
+}
+
+nav ul li a i.fa-user-circle {
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #000;
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-logo .site-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+    max-width: 250px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.quick-links-section {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.quick-links-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: contents;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-info p:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.leaflet-control {
+    cursor: auto;
+    width: 30vw;
+    height : 0px;
+    overflow-x: scroll; /* Allow vertical scrolling */
+
+}

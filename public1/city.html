@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad Heritage and Cultural Places</title>
+    <link rel="stylesheet" href="./css/city.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/output.png" alt="India Unveiled Logo">
+            <span class="site-title">India Unveiled</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./culture.html">Explore</a></li>
+                <li><a href="./Blog.html">Blogs</a></li>
+                <li><a href="./Quiz.html">Play</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search places..." oninput="filterPlaces()">
+        </div>
+        <section class="heritage-intro">
+            <h1>History of Ahmedabad</h1>
+            <p>Ahmedabad, founded in 1411 by Sultan Ahmed Shah, is a city rich in history and culture. Known as the 'Manchester of India' for its textile industry, Ahmedabad is also celebrated for its well-preserved architecture, ranging from ancient mosques and temples to historic stepwells and gates. The city was recognized as India's first UNESCO World Heritage City in 2017, owing to its rich architectural legacy and vibrant cultural heritage. From the tranquil Sabarmati Ashram to the bustling markets of the old city, Ahmedabad offers a unique glimpse into India's past and present.</p>
+        </section>
+        
+        <section id="places-list" class="places-list">
+            <!-- Place Cards -->
+            <div class="place-card">
+                <img src="./src/adalaj.jpeg" alt="Adalaj Stepwell">
+                <div class="info">
+                    <h2>Adalaj Stepwell</h2>
+                    <p>A beautifully crafted stepwell built in 1498 with an elaborate design, serving as a resting place for many travelers.</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="./src/sabarmati-asharm-1.jpeg" alt="Sabarmati Ashram">
+                <div class="info">
+                    <h2>Sabarmati Ashram</h2>
+                    <p>Once the residence of Mahatma Gandhi, this ashram on the banks of the Sabarmati River is now a national monument.</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="./src/Jama-(Jumma)-Masjid-Thumbnail.jpg" alt="Jama Masjid">
+                <div class="info">
+                    <h2>Jama Masjid</h2>
+                    <p>A beautiful mosque built in 1424 during the reign of Ahmed Shah I, known for its stunning architecture.</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="./src/sidi.jpg" alt="Sidi Saiyyed Mosque">
+                <div class="info">
+                    <h2>Sidi Saiyyed Mosque</h2>
+                    <p>Famous for its intricately carved stone latticework windows, especially the tree of life motif.</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="./src/kite.jpeg" alt="Kite Museum">
+                <div class="info">
+                    <h2>Kite Museum</h2>
+                    <p>Located in Sanskar Kendra, it houses unique and rare collections of kites from around the world.</p>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="./src/swaminarayan.jpeg" alt="Swaminarayan Temple">
+                <div class="info">
+                    <h2>Swaminarayan Temple</h2>
+                    <p>A stunning Hindu temple complex with intricate carvings and vibrant marble structures dedicated to Lord Swaminarayan.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <img src="./src/output.png" alt="India Unveiled Logo">
+                    <div class="logo-text">
+                        <span class="site-title" style="color:white">India Unveiled</span>
+                        <div style="font-size:13px; font-weight: 20;">Discover, Learn, Immerse, Connect</div>
+                    </div>
+                </div>
+                <div>
+                    <p class="site-description"><span>Discover India's rich tapestry of heritage and culture.
+                        Join us on a journey through India's past and present.
+                        Exploring the heart and soul of India.
+                        </span></p>
+                </div>
+            </div>
+            <div class="quick-links-section">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="./Blog.html">Blogs</a></li>
+                        <li><a href="#">AI Assistant</a></li>
+                        <li><a href="./Quiz.html">Educational Quiz</a></li>
+                        <li><a href="./culture.html">Culture</a></li>
+                        <li><a href="../public/index.html">Journey Blueprint with AI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>Reach out to us for more information:</p>
+                <p>Email: indiaunveiled@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - India Unveiled, All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script/city.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/e738a448-6fed-45ce-9177-54e4e05ced12/webchat/v2.1/config.js"></script>
+</body>
+</html>

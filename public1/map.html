@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Cultural Places and Search</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/output.png" alt="India Unveiled Logo">
+            <span class="site-title">India Unveiled</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./culture.html">Explore</a></li>
+                <li><a href="./Blog.html">Blogs</a></li>
+                <li><a href="./Quiz.html">Play</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Search for any location in India..." />
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="map"></div>
+
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <div class="logo-container">
+                <img src="./src/output.png" alt="India Unveiled Logo">
+                <div class="logo-text">
+                    <span class="site-title" style="color:white">India Unveiled</span>
+                    <div style="font-size:13px; font-weight: 20;">Discover, Learn, Immerse, Connect</div>
+                </div>
+            </div>
+            <div>
+                <p class="site-description"><span>Discover India's rich tapestry of heritage and culture.
+                    Join us on a journey through India's past and present.
+                    Exploring the heart and soul of India.
+                    </span></p>
+            </div>
+        </div>
+        <div class="quick-links-section">
+            <h2>Quick Links</h2>
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a href="./Blog.html">Blogs</a></li>
+                    <li><a href="#">AI Assistant</a></li>
+                    <li><a href="./Quiz.html">Educational Quiz</a></li>
+                    <li><a href="./culture.html">Culture</a></li>
+                    <li><a href="../public/index.html">Journey Blueprint with AI</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Reach out to us for more information:</p>
+            <p>Email: indiaunveiled@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 - India Unveiled, All rights reserved.</p>
+    </div>
+</footer>
+</body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="./script/map.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/e738a448-6fed-45ce-9177-54e4e05ced12/webchat/v2.1/config.js"></script>
+</body>
+</html>

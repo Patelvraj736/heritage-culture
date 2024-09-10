@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Unveiled Quiz</title>
+    <link rel="stylesheet" href="./css/Quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/output.png" alt="India Unveiled Logo">
+            <span class="site-title">India Unveiled</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./culture.html">Explore</a></li>
+                <li><a href="./Blog.html">Blogs</a></li>
+                <li><a href="./Quiz.html">Play</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-container">
+            <h1 id="question"></h1>
+            <div class="options">
+                <input type="radio" id="option-a" name="quiz" value="A">
+                <label class="option" for="option-a"> <span class="checkmark">✔️</span></label>
+                
+                <input type="radio" id="option-b" name="quiz" value="B">
+                <label class="option" for="option-b">  <span class="checkmark">✔️</span></label>
+                
+                <input type="radio" id="option-c" name="quiz" value="C">
+                <label class="option" for="option-c"> <span class="checkmark">✔️</span></label>
+                
+                <input type="radio" id="option-d" name="quiz" value="D">
+                <label class="option" for="option-d"> <span class="checkmark">✔️</span></label>
+            </div>
+            <button class="submit-button">Submit</button>
+            <!-- Add this HTML snippet where you want to display the result -->
+<div class="result" style="display:none;" >
+    <h2>Quiz Completed!</h2>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="result-text"></p>
+</div>
+
+        </section>
+
+        <aside class="sidebar">
+            <div class="timer" id="timer-container">
+                <div class="timer-circle">
+                    <div class="timer-inner">
+                        <span id="timer">30</span>
+                    </div>
+                </div>
+                <p>Time Remaining</p>
+            </div>
+            <div class="quiz-list">
+                <h3>Quiz Questions List</h3>
+                <ul id="quiz-list">
+                    <!-- Questions will be added dynamically -->
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <img src="./src/output.png" alt="India Unveiled Logo">
+                    <div class="logo-text">
+                        <span class="site-title" style="color:white">India Unveiled</span>
+                        <div style="font-size:13px; font-weight: 20;">Discover, Learn, Immerse, Connect</div>
+                    </div>
+                </div>
+                <div>
+                    <p class="site-description"><span>Discover India's rich tapestry of heritage and culture.
+                        Join us on a journey through India's past and present.
+                        Exploring the heart and soul of India.
+                        </span></p>
+                </div>
+            </div>
+            <div class="quick-links-section">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="./Blog.html">Blogs</a></li>
+                        <li><a href="#">AI Assistant</a></li>
+                        <li><a href="./Quiz.html">Educational Quiz</a></li>
+                        <li><a href="./culture.html">Culture</a></li>
+                        <li><a href="../public/index.html">Journey Blueprint with AI</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>Reach out to us for more information:</p>
+                <p>Email: indiaunveiled@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - India Unveiled, All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+    
+    <script src="./script/Quiz.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/e738a448-6fed-45ce-9177-54e4e05ced12/webchat/v2.1/config.js"></script>
+</body>
+</html>

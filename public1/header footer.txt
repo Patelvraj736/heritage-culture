@@ -1,0 +1,220 @@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+HTML: 
+    <header>
+        <div class="logo">
+            <img src="output.png" alt="India Unveiled Logo">
+            <span class="site-title">India Unveiled</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Play</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+HTML:
+
+<footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <img src="output.png" alt="India Unveiled Logo">
+                    <div class="logo-text">
+                        <span class="site-title" style="color:white">India Unveiled</span>
+                        <div style="font-size:13px; font-weight: 20;">Discover, Learn, Immerse, Connect</div>
+                    </div>
+                </div>
+                <div>
+                    <p class="site-description"><span>Discover India's rich tapestry of heritage and culture.
+                        Join us on a journey through India's past and present.
+                        Exploring the heart and soul of India.
+                        </span></p>
+                </div>
+            </div>
+            <div class="quick-links-section">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">AI Assistant</a></li>
+                        <li><a href="#">Educational Quiz</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Journey Blueprint with AI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>Reach out to us for more information:</p>
+                <p>Email: indiaunveiled@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - India Unveiled, All rights reserved.</p>
+        </div>
+    </footer>
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-family: ui-monospace;
+    margin-left: 7px;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: larger;
+
+}
+
+nav ul li a i.fa-user-circle {
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #000;
+    display: inline-block;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-logo .site-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+    max-width: 250px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.quick-links-section {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.quick-links-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: contents;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-info p:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
